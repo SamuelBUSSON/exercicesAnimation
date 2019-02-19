@@ -7,6 +7,7 @@ public class YellowParabola : MonoBehaviour
 {
     public float speed = 10.0f;
     private float angle;
+    private float time = 0.0f;
 
     public int[] Tris = new int[100];
 
@@ -61,5 +62,8 @@ public class YellowParabola : MonoBehaviour
     {
         var modelView = Matrix4x4.TRS(new Vector3(-3, -3, 0), Quaternion.Euler(0, 0, 0), new Vector3(0.2f, 0.2f, 0.2f));
         material.SetMatrix("modelMatrix", modelView);
+
+        time += Time.deltaTime;
+        GetComponent<MeshRenderer>().material.SetFloat("_Oscill", time);
     }
 }

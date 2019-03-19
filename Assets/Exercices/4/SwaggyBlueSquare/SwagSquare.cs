@@ -10,6 +10,8 @@ public class SwagSquare: MonoBehaviour
     private bool test;
     private Material material;
 
+    private float time = 0.0f;
+
     public void Start()
     {
         var mesh = new Mesh();
@@ -55,5 +57,9 @@ public class SwagSquare: MonoBehaviour
         }
         var modelView = Matrix4x4.Translate(new Vector3(translate, 0, 0));
         material.SetMatrix("modelMatrix", modelView);
+
+        time += Time.deltaTime;
+        material.SetFloat("_Time", time);
+
     }
 }

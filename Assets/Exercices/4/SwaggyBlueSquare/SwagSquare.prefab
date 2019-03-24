@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7649510404390242247}
   - component: {fileID: 6509703055006103285}
   m_Layer: 0
-  m_Name: RedTriangle
+  m_Name: SwagSquare
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71,7 +71,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 41cdea95879ec4a639489926876d2124, type: 2}
+  - {fileID: 2100000, guid: ef934a0e4bc82ec4f98e24647249908b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

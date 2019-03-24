@@ -273,7 +273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6a5b6b455d594e90a0d0d19606a40fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectionMatrix: {fileID: 11400000, guid: 14088d365c4cdba47a47752549fb7938, type: 2}
+  projectionMatrix: {fileID: 0}
 --- !u!4 &123772476 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8847158947443316631, guid: 2e933b2feeb364d93a361d2ae8360341,
@@ -2160,12 +2160,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2071850512}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b02391243ac8ee44a08a8fec99a1b21, type: 3}
+  m_Script: {fileID: 11500000, guid: abeab066771419743ba49154d90a5a31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1542006171}
   minDistance: 5
-  maxDistance: 25
+  maxDistance: 10
   horizontalFOVRange: 5
 --- !u!1001 &1041065963208341887
 PrefabInstance:

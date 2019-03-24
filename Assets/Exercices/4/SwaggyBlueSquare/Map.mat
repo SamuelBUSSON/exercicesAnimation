@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PlainBlueMaterial
-  m_Shader: {fileID: 4800000, guid: 8ef9dc50827694478b9bfcc298302f6f, type: 3}
+  m_Name: Map
+  m_Shader: {fileID: 4800000, guid: ccce992f5ef5fd84da28bac84d915ec1, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -20,7 +20,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 5192164e852a3400699e6fda22c8965c, type: 3}
+        m_Texture: {fileID: 2800000, guid: 196893b6897944f4bb32dd6c146dbda8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TexAltitude:
+        m_Texture: {fileID: 2800000, guid: f7f3c497518fb43538d09786613d2c8f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TexDefor:
@@ -28,7 +32,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TexDeform:
-        m_Texture: {fileID: 2800000, guid: e6e241ca2acbe444ea9a182057e64431, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TexIntensity:
@@ -36,6 +40,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _Scale: 1
+    - _Scale: 0.9
     - _Time: 0
-    m_Colors: []
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}

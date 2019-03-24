@@ -1,6 +1,6 @@
 ﻿// UNITY_SHADER_NO_UPGRADE
 
-Shader "8TRD150/3_0_PlainBlueShader"
+Shader "8TRD150/3_0_TreeShader"
 {
     Properties
     {

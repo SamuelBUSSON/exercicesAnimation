@@ -60,7 +60,7 @@ public class YellowParabola : MonoBehaviour
 
     public void Update()
     {
-        var modelView = Matrix4x4.TRS(new Vector3(-3, -3, 0), Quaternion.Euler(0, 0, 0), new Vector3(0.2f, 0.2f, 0.2f));
+        var modelView = Matrix4x4.TRS(new Vector3(-1, -1, 0), Quaternion.Euler(0, 0, 0), new Vector3(0.05f, 0.05f, 0.05f));
         material.SetMatrix("modelMatrix", modelView);
 
         time += Time.deltaTime;

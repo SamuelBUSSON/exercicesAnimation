@@ -1,0 +1,53 @@
+{
+  "frames": {
+
+    "Tentacle/Rotate/0": {
+      "rotated": {
+        "0": 10,
+        "1": 10,
+        "2": 30,
+        "3": 45,
+        "4": 60
+      }
+    },
+    "Tentacle/Rotate/1": {
+      "rotated": {
+        "0": 0,
+        "1": 0,
+        "2": 4,
+        "3": 25,
+        "4": 200
+      }
+    },
+    "Tentacle/Rotate/2": {
+      "rotated": {
+        "0": -10,
+        "1": -15,
+        "2": -20,
+        "3": 0,
+        "4": -60
+      }
+    },
+    "Tentacle/Rotate/3": {
+      "rotated": {
+        "0": 0,
+        "1": 0,
+        "2": 4,
+        "3": 25,
+        "4": 200
+      }
+    }
+  },
+  "meta": {
+    "app": "https://www.codeandweb.com/texturepacker",
+    "version": "1.0",
+    "image": "",
+    "format": "RGBA8888",
+    "size": {
+      "w": 64,
+      "h": 64
+    },
+    "scale": "1",
+    "smartupdate": "$TexturePacker:SmartUpdate:e8ac118a6dff825361eb2370af2ebee3:2b670f5914563fe73a44f04403112b36:049a1e10ddf44989e4af4e84fecd01e8$"
+  }
+}

@@ -4,37 +4,29 @@ using UnityEngine;
 using Json = MiniJSON.Json;
 
 [CreateAssetMenu(fileName = "Spritesheet", menuName = "ScriptableObjects/2D Anim/Spritesheet", order = 1)]
-public class SpritesheetDescription : ScriptableObject
+public class SpritesheetDescription2 : ScriptableObject
 {
     public TextAsset descriptionFile;
     public Texture2D texture;
 
+
     public class SpriteDescr
     {
-        public RectInt frame;
-        public Vector2Int sourceSize;
-        public Vector2 pivot;
-
-
+        public int[] rotated;
 
         public SpriteDescr(Dictionary<string, object> descr, Texture2D texture)
         {
-            var frameDesc = descr["frame"] as Dictionary<string, object>;
-            var sourceSizeDesc = descr["sourceSize"] as Dictionary<string, object>;
-            var pivotDesc = descr["pivot"] as Dictionary<string, object>;
+            var frameDesc = descr["rotated"] as Dictionary<string, object>;
 
-            frame = new RectInt(
-                Convert.ToInt32(frameDesc["x"]),
-                Convert.ToInt32(frameDesc["y"]),
-                Convert.ToInt32(frameDesc["w"]),
-                Convert.ToInt32(frameDesc["h"])
-            );
+            rotated = new int[5];
 
-            // L'axe Y de la texture est inversé par rapport aux données de la sprite sheet
-            frame.y = texture.height - frame.yMax;
+            rotated[0] = Convert.ToInt32(frameDesc["0"]);
+            rotated[1] = Convert.ToInt32(frameDesc["1"]);
+            rotated[2] = Convert.ToInt32(frameDesc["2"]);
+            rotated[3] = Convert.ToInt32(frameDesc["3"]);
+            rotated[4] = Convert.ToInt32(frameDesc["4"]);
 
-            sourceSize = new Vector2Int(Convert.ToInt32(sourceSizeDesc["w"]), Convert.ToInt32(sourceSizeDesc["h"]));
-            pivot = new Vector2(Convert.ToSingle(pivotDesc["x"]), Convert.ToSingle(pivotDesc["y"]));
+
         }
     }
 
